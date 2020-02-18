@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">XO Game</string>
+    <string name="menu">Menu</string>
+    <string name="single_player">Single Player</string>
+    <string name="two_player">Two Player</string>
+    <string name="score">Score</string>
+    <string name="player_1">O : Player 1</string>
+    <string name="bot">X : Bot</string>
+    <string name="x">X</string>
+    <string name="zero">0</string>
+    <string name="turn_number">Turn Number</string>
+    <string name="turn">Turn</string>
+    <string name="o_player_2">X : Player 2</string>
+    <string name="again">Again!</string>
+    <string name="two_player_bluetooth">Two Player (BlueTooth)</string>
+    <string name="list_devices">LIST DEVICES</string>
+    <string name="listen">LISTEN</string>
+    <string name="status">Status</string>
+    <string name="message">Message</string>
+    <string name="send">send</string>
+    <string name="enter_message_here">Enter message here</string>
+    <string name="ready">Ready</string>
+    <string name="uro">Score (You are \'O\')</string>
+    <string name="urx">Score (You are \'X\')</string>
+    <string name="conted">Connected</string>
+    <string name="confail">Connection failed</string>
+    <string name="conting">Connecting</string>
+    <string name="lising">Listening</string>
+</resources>

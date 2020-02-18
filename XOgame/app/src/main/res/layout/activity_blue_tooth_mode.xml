@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview" />
+
+    <TextView
+        android:id="@+id/firstscoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/player_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoretxt" />
+
+    <TextView
+        android:id="@+id/botscoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/o_player_2"
+        app:layout_constraintEnd_toStartOf="@+id/turnoxtxt"
+        app:layout_constraintStart_toEndOf="@+id/onescoretxt"
+        app:layout_constraintTop_toTopOf="@+id/firstscoretxt" />
+
+    <TextView
+        android:id="@+id/onescoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        app:layout_constraintStart_toEndOf="@+id/firstscoretxt"
+        app:layout_constraintTop_toTopOf="@+id/firstscoretxt" />
+
+    <TextView
+        android:id="@+id/bscoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/zero"
+        app:layout_constraintStart_toEndOf="@+id/botscoretxt"
+        app:layout_constraintTop_toTopOf="@+id/botscoretxt" />
+
+    <TextView
+        android:id="@+id/gridtxt00"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#3B050505"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gridtxt01"
+        app:layout_constraintEnd_toEndOf="@+id/gridtxt10" />
+
+    <TextView
+        android:id="@+id/gridtxt01"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#19000000"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridtxt11"
+        app:layout_constraintEnd_toEndOf="@+id/gridtxt11"
+        app:layout_constraintStart_toEndOf="@+id/gridtxt10" />
+
+    <TextView
+        android:id="@+id/gridtxt02"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#3B050505"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gridtxt01"
+        app:layout_constraintStart_toEndOf="@+id/gridtxt11" />
+
+    <TextView
+        android:id="@+id/gridtxt10"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#19000000"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gridtxt11"
+        app:layout_constraintEnd_toStartOf="@+id/gridtxt11"
+        app:layout_constraintTop_toBottomOf="@+id/gridtxt01" />
+
+    <TextView
+        android:id="@+id/gridtxt11"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#3B050505"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/againbt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botscoretxt" />
+
+    <TextView
+        android:id="@+id/gridtxt12"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#19000000"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/gridtxt11"
+        app:layout_constraintTop_toBottomOf="@+id/gridtxt01" />
+
+    <TextView
+        android:id="@+id/gridtxt21"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#19000000"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gridtxt11"
+        app:layout_constraintStart_toEndOf="@+id/gridtxt10"
+        app:layout_constraintTop_toBottomOf="@+id/gridtxt11" />
+
+    <TextView
+        android:id="@+id/gridtxt22"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#3B050505"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/gridtxt11"
+        app:layout_constraintTop_toBottomOf="@+id/gridtxt11" />
+
+    <TextView
+        android:id="@+id/gridtxt20"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#3B050505"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gridtxt10"
+        app:layout_constraintTop_toBottomOf="@+id/gridtxt11" />
+
+    <TextView
+        android:id="@+id/turnoxtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/turn"
+        app:layout_constraintEnd_toStartOf="@+id/turnox1txt"
+        app:layout_constraintTop_toTopOf="@+id/bscoretxt" />
+
+    <TextView
+        android:id="@+id/turnox1txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="O"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/turnoxtxt" />
+
+    <Button
+        android:id="@+id/againbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/again"
+        app:layout_constraintBottom_toTopOf="@+id/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/listDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/list_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/listen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/status"
+        app:layout_constraintStart_toEndOf="@+id/listDevices"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        app:layout_constraintBottom_toBottomOf="@+id/ready"
+        app:layout_constraintEnd_toEndOf="@+id/writeMsg"
+        app:layout_constraintStart_toStartOf="@+id/writeMsg"
+        app:layout_constraintTop_toTopOf="@+id/ready" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/send"
+        app:layout_constraintBottom_toTopOf="@+id/ready"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/writeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="@string/enter_message_here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/send" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listDevices" />
+
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/ready"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/send"
+        app:layout_constraintStart_toStartOf="@+id/send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
